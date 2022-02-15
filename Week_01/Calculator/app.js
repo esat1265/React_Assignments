@@ -1,4 +1,19 @@
 /**
+ * ANALYSE
+ * 1- First we will create a bootstrap template
+ * 2- Then we will seperate them to the fragments
+ * 3- With DOM element we will reach the buttons
+ * 4- We will write some functions;
+ *  a) A function that adds number in to the input area
+ *  b) A function that adds operations in to the input area
+ *  c) Functions that clear and evaluate the numbers
+ * 5- We will render all things in main tags.
+ */
+
+
+
+
+/**
  * DOM
  */
  let result = document.querySelector('.result');
