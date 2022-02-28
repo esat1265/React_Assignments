@@ -1,5 +1,4 @@
-
-export const dataList = [
+[
   {
     "id": 1,
     "first_name": "Nesta",

@@ -2,25 +2,28 @@
 import Header from "./Header.js";
 
 const Person = (props) =>{
+
     return (
-        <>
-        <Header name="PERSON"/>
+     
+         <> 
+         <Header name="PERSON"/>
         
-        {props.data.map(item =>(
-        <div class="card" style={{ width: "18rem" }}>
-        <svg
-          class="card-img-top"
-          src="holder.js/100px180"
-          alt="Card image cap"
-        ></svg>
-        <div class="card-body">
-          <p class="card-text">Some quick example </p>
-          <p class="card-text">Some quick example </p>
-          <p class="card-text">Some quick example </p>
-        </div>
-      </div>))}
-        
-        </>
+          <div className="card" style={{ width: "18rem" }}>
+          <img
+            className="card-img-top"
+            src={props.personList.avatar}
+            alt="Card image cap"
+          ></img>
+          <div className="card-body">
+            <p className="card-text">Firstname:{props.personList.first_name} </p>
+            <p className="card-text">Lastname:{props.personList.last_name} </p>
+            <p className="card-text">Adress:{props.personList.adress} </p>
+            <p className="card-text">Salary: {props.personList.salary}</p>
+            <p className="card-text">Gender:{props.personList.gender} </p>
+            <p className="card-text">Email:{props.personList.email} </p>
+          </div>
+        </div> 
+        </> 
     )
 };
 

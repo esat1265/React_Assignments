@@ -1,18 +1,18 @@
-import Person from "./components/Person.js";
-import Friends from "./components/Friends.js";
-import Children from "./components/Children.js";
-import { dataList } from "./data.js";
+
+import  dataList  from "./components/data.json";
+import PersonList from "./components/PersonList.js";
 
 
-function App() {
+
+
+function App() {  
+
   return (
-    <div class="App container">
-      <div class="row">
-        <div class="col-4"><Person data = {dataList}/></div>
-        <div class="col-8"><Children data = {dataList}/><Friends data = {dataList}/></div>
-      </div>
-    </div>
-  );
-}
+   
+    dataList.map(person =>
+     <div className="App container">
+        <PersonList  dataList={person}/> 
+     </div> )
+  )}
 
 export default App;

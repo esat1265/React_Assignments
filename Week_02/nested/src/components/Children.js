@@ -1,29 +1,30 @@
-
 import Header from "./Header.js";
 
-const Children = (props) =>{
+const Children = (props) => {
 
-    let childrenList = props.data.map(item =>(item.children));
-    console.log(childrenList)
-    return (
-        <>
-         <Header name="CHILDREN"/>
-         <div class="row m-auto">
-         {childrenList.map(item =>(
-        <div class="card m-1" style={{ width: "18rem" }}>
-        <svg
-          class="card-img-top"
-          src={item.avatar}
+  return ( 
+  <>
+    <Header name="CHILDREN" />
+     {props.childrenList.map(child => 
+   
+    <div className="col-4">
+      <div className="card" style={{ width: "18rem" }}>
+        <img
+          className="card-img-top"
+          src={child.avatar}
           alt="Card image cap"
-        ></svg>
-        <div class="card-body">
-          <p class="card-text">First name:{item} </p>
-          <p class="card-text">Some quick example </p>
-          <p class="card-text">Some quick example </p>
+        ></img>
+        <div className="card-body">
+          <p className="card-text">First name:{child.firstName} </p>
+          <p className="card-text">Gender:{child.gender} </p>
+          <p className="card-text">Birthday:{child.birthday}  </p>
         </div>
-      </div>))}</div>
-        </>
-    )
-};
+      </div>
+    </div>
+  )}
+  </>
+  )}
+       
+  
 
 export default Children;
