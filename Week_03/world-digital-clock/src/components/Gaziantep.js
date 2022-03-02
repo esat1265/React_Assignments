@@ -9,7 +9,7 @@ function Gaziantep() {
 
     setInterval(()=>{
         const time = new Date();
-        setHours(time.getHours() - 2) ;
+        setHours(time.getHours() + 2) ;
         setMinutes(time.getMinutes()) ;
         setSeconds(time.getSeconds()) ;
     },1000)
