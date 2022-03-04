@@ -1,3 +1,8 @@
+*{
+    margin-top: 5px;
+}
+
+
 .header {
     background-color: blueviolet;
     width: 500px;
@@ -9,9 +14,47 @@
 }
 
 .options{
-    background-color:teal;
+    background-color:rgb(128, 0, 75);
     width: 120px;
-    height: 60px;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+    color: aliceblue; 
+}
+.next{
+    background-color: rgb(21, 255, 0);
+    margin: 5px;
+    margin-left: 200px;
+    width: 120px;
+    height: 30px;
+}
+
+.true-score{
+    background-color:rgb(0, 128, 38);
+    width: 120px;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+    color: aliceblue; 
+}
+.false-score{
+    background-color:rgb(128, 0, 0);
+    width: 120px;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px;
+    color: aliceblue; 
+}
+.number-of-question{
+    background-color:rgb(0, 9, 128);
+    width: 120px;
+    height: 30px;
     margin: 5px;
     text-align: center;
     padding-top: 5px;
