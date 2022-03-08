@@ -4,32 +4,42 @@ import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
 
 function Login() {
+// useStates for each input area
   const [userName, setUserName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [passwordRepeat, setPasswordRepeat] = useState();
   const [info, setInfo] = useState();
 
+  //getting username function
   const getUserName = (e) => {
     e.preventDefault();
     setUserName(e.target.value);
   };
 
+
+  //getting email function
   const getEmail = (e) => {
     e.preventDefault();
     setEmail(e.target.value);
   };
 
+  //getting passsword function
   const getPassword = (e) => {
     e.preventDefault();
     setPassword(e.target.value);
   };
 
+
+  //getting passrepeat function
   const getPasswordRepeat = (e) => {
     e.preventDefault();
     setPasswordRepeat(e.target.value);
   };
 
+
+
+  //for rendering info section
   const getAlert = () => {
     return (
       <Alert variant="success">
@@ -41,6 +51,8 @@ function Login() {
     );
   };
 
+
+  //sing up submit button and checking password correction 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (password === passwordRepeat) {
