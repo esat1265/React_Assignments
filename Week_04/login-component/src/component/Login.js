@@ -82,7 +82,7 @@ function Login() {
             placeholder="Password Repeat"/><br /><br />
         </Form.Group>
 
-        <Button onClick={handleSubmit} variant="primary" type="submit">
+        <Button onClick={handleSubmit} className="primary" type="submit">
           SIGN UP
         </Button>
       </Form><br /><br />
