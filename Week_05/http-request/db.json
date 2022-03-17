@@ -1,0 +1,21 @@
+{
+  "personList": [
+    {
+      "id": 1,
+      "first_name": "Ahmet",
+      "last_name": "Demir",
+      "email": "ahmet@gmail.com",
+      "password": "12345",
+      "about": "adffaf asdfsdfa asdfasdf"
+    },
+    {
+      "id": 2,
+      "first_name": "Mehmet",
+      "last_name": "Demir",
+      "email": "mehmet@gmail.com",
+      "password": "1234522",
+      "about": "gs ghddk diooma; ;ljoaa"
+    }
+  ]
+ 
+}
