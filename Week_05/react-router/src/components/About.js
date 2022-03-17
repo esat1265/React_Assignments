@@ -21,7 +21,7 @@ function About() {
           </div>
         </div>
       </nav>
-      <div className="alert alert-secondary">
+      <div className="alert alert-danger">
         <h1>About</h1>
       </div>
     </>
