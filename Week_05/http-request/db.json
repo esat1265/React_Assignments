@@ -1,21 +1,28 @@
 {
   "personList": [
     {
-      "id": 1,
-      "first_name": "Ahmet",
-      "last_name": "Demir",
-      "email": "ahmet@gmail.com",
-      "password": "12345",
-      "about": "adffaf asdfsdfa asdfasdf"
+      "first_name": "mehmet",
+      "last_name": "demir",
+      "email": "demir@mail",
+      "password": "123",
+      "about": "selam",
+      "id": 1
     },
     {
-      "id": 2,
-      "first_name": "Mehmet",
-      "last_name": "Demir",
-      "email": "mehmet@gmail.com",
-      "password": "1234522",
-      "about": "gs ghddk diooma; ;ljoaa"
+      "first_name": "hasan",
+      "last_name": "celik",
+      "email": "celikdemir@mail",
+      "password": "6666",
+      "about": "hi millet",
+      "id": 2
+    },
+    {
+      "first_name": "hasan",
+      "last_name": "celiknamik",
+      "email": "celikdemir@mail",
+      "password": "6666",
+      "about": "hi millet",
+      "id": 3
     }
   ]
- 
 }
