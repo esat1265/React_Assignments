@@ -1,28 +1,36 @@
 {
   "personList": [
     {
-      "first_name": "mehmet",
-      "last_name": "demir",
+      "firstName": "mehmet",
+      "lastName": "demir",
       "email": "demir@mail",
       "password": "123",
       "about": "selam",
       "id": 1
     },
     {
-      "first_name": "hasan",
-      "last_name": "celik",
-      "email": "celikdemir@mail",
-      "password": "6666",
-      "about": "hi millet",
+      "firstName": "Hasan",
+      "lastName": "demir",
+      "email": "demir@mail",
+      "password": "123",
+      "about": "selam",
       "id": 2
     },
     {
-      "first_name": "hasan",
-      "last_name": "celiknamik",
-      "email": "celikdemir@mail",
-      "password": "6666",
-      "about": "hi millet",
+      "firstName": "ali",
+      "lastName": "kadir",
+      "email": "ali@aka",
+      "password": "33333",
+      "about": "hi",
       "id": 3
+    },
+    {
+      "firstName": "hakki",
+      "lastName": "bulut",
+      "email": "ali@aka",
+      "password": "33333",
+      "about": "hi",
+      "id": 4
     }
   ]
 }
