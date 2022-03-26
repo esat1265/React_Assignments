@@ -2,10 +2,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { BsFillArchiveFill,BsFillPenFill,BsFillEyeFill } from 'react-icons/bs';
-import { Route, Link } from "react-router-dom";
-import Page from "./Page";
+import { Link } from "react-router-dom";
 
-function Home() {
+
+function Home({setData}) {
   const [user, setUser] = useState([]);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -13,6 +13,7 @@ function Home() {
   const [password, setPassword] = useState("");
   const [about, setAbout] = useState("");
   const [editid, setEditid] = useState(0);
+  
 
 
   useEffect(()=> {
@@ -78,8 +79,6 @@ function Home() {
     })
     getPersonName();
  }
-
-
 
 
   return (
@@ -152,7 +151,6 @@ function Home() {
             <div className="d-flex align-items-center p-3 my-3 text-white bg-primary rounded shadow-sm">
               <h1 className="h6 mb-0 text-white lh-1">PERSON LIST</h1>
      </div>
-     <Route path="/page" element={<Page />} />
        <table className="table">
          <thead>
            <tr>
@@ -173,8 +171,8 @@ function Home() {
              <td>{person.email}</td>
              <td>{person.password}</td>
              <td>{person.about}</td>
-             <td><Link className="text-light ms-2" to="/Page">
-             <BsFillEyeFill />
+             <td><Link onClick={()=>setData(person)} className="Text-dark ms-2" to="/Page">
+             <BsFillEyeFill  />
               </Link></td>
              <td><BsFillPenFill onClick={()=>editList(person.id)}/></td>
              <td><BsFillArchiveFill onClick={()=> deletePerson(person.id)}/></td>
